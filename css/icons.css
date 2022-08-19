@@ -1,0 +1,69 @@
+@font-face {
+   font-family: 'icons';
+   src: url('../fonts/icons.eot?ao36m0');
+   src: url('../fonts/icons.eot?ao36m0#iefix') format('embedded-opentype'),
+      url('../fonts/icons.ttf?ao36m0') format('truetype'),
+      url('../fonts/icons.woff?ao36m0') format('woff'),
+      url('../fonts/icons.svg?ao36m0#icons') format('svg');
+   font-weight: normal;
+   font-style: normal;
+   font-display: block;
+}
+
+[class^="_icon-"]::before,
+[class*=" _icon-"]::before {
+   /* use !important to prevent issues with browser extensions that change fonts */
+   font-family: 'icons' !important;
+   speak: never;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+
+   /* Better Font Rendering =========== */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="_icon-"]::after,
+[class*=" _icon-"]::after {
+   /* use !important to prevent issues with browser extensions that change fonts */
+   font-family: 'icons' !important;
+   speak: never;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+
+   /* Better Font Rendering =========== */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-join:after {
+   content: "\e900";
+}
+
+._icon-id:after {
+   content: "\e901";
+   width: 4.39px;
+   height: 7.44px;
+}
+
+._icon-edit:before {
+   content: "\e902";
+}
+
+._icon-date:after {
+   content: "\e903";
+}
+
+._icon-amount:after {
+   content: "\e904";
+}
+
+._icon-settings:after {
+   content: "\e905";
+}
