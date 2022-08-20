@@ -520,7 +520,7 @@ body {
   width: 6px;
   height: 6px;
   margin: 2px;
-  background: rgba(255, 200, 200, 0);
+  background: #D7D7D7;
 }
 .history__block ::-webkit-scrollbar-thumb {
   background: #D7D7D7;
@@ -643,7 +643,7 @@ body {
 ::-webkit-scrollbar {
   width: 4px;
   height: 4px;
-  background: rgba(255, 200, 200, 0);
+  background: #D7D7D7;
 }
 ::-webkit-scrollbar-thumb {
   background: #D7D7D7;
