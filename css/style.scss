@@ -26,6 +26,7 @@ body {
 .header {
    width: 100%;
    background: #FFFFFF;
+   margin-bottom: 24px;
 
    &__container {
       display: flex;
@@ -727,6 +728,70 @@ body {
    /* Neutral/700(Text Main) */
 
    color: #353538;
+
+   &-items {
+      width: 261px;
+      justify-content: end;
+   }
+
+   &>* {
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      height: 48px;
+   }
+
+   &>*:not(:last-child)::after {
+      content: '';
+      position: absolute;
+
+      right: -14px;
+      background: #D7D7D7;
+      width: 1px;
+      height: 64px;
+   }
+
+   &>*::before {
+      content: '';
+      position: absolute;
+      top: -12px;
+      right: 0;
+
+
+      font-family: 'Arimo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 12px;
+      /* identical to box height, or 100% */
+
+      text-align: right;
+
+      /* Neutral/500 */
+
+      color: #73738C;
+   }
+
+   &-first-cost::before {
+      content: 'Cost';
+   }
+
+   &-first-date::before {
+      content: 'Date & time';
+   }
+
+   &-items::before {
+      content: 'Items';
+   }
+
+   &-delivery::before {
+      content: 'Delivery or pickup';
+   }
+
+   &-payment::before {
+      content: 'Payment method';
+   }
 }
 
 //==========================================================================================

@@ -22,6 +22,7 @@ body {
 .header {
   width: 100%;
   background: #FFFFFF;
+  margin-bottom: 24px;
 }
 .header__container {
   display: flex;
@@ -520,7 +521,7 @@ body {
   width: 6px;
   height: 6px;
   margin: 2px;
-  background: #D7D7D7;
+  background: rgba(255, 200, 200, 0);
 }
 .history__block ::-webkit-scrollbar-thumb {
   background: #D7D7D7;
@@ -617,6 +618,54 @@ body {
   /* Neutral/700(Text Main) */
   color: #353538;
 }
+.history__data-items {
+  width: 261px;
+  justify-content: end;
+}
+.history__data > * {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 48px;
+}
+.history__data > *:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -14px;
+  background: #D7D7D7;
+  width: 1px;
+  height: 64px;
+}
+.history__data > *::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  right: 0;
+  font-family: "Arimo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  /* identical to box height, or 100% */
+  text-align: right;
+  /* Neutral/500 */
+  color: #73738C;
+}
+.history__data-first-cost::before {
+  content: "Cost";
+}
+.history__data-first-date::before {
+  content: "Date & time";
+}
+.history__data-items::before {
+  content: "Items";
+}
+.history__data-delivery::before {
+  content: "Delivery or pickup";
+}
+.history__data-payment::before {
+  content: "Payment method";
+}
 
 .btn-view {
   font-family: "Arimo";
@@ -643,7 +692,7 @@ body {
 ::-webkit-scrollbar {
   width: 4px;
   height: 4px;
-  background: #D7D7D7;
+  background: rgba(255, 200, 200, 0);
 }
 ::-webkit-scrollbar-thumb {
   background: #D7D7D7;
